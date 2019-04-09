@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morse to Latin</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/">< Home</a>
+    </header>
+    <div class="main">
+        <h1>Morse Code</h1>
+        <p>Write your morse code below. You can use helper buttons for special characters.</p>
+        <div id="app">
+            <div class="buttons">
+                <button v-on:click="addHyphen">–</button>
+                <button v-on:click="addDot">•</button>
+                <button v-on:click="addSpace">&nbsp;</button>
+                <button v-on:click="clear">clear</button>
+            </div>
+            <textarea v-model="morseCode" id="txtLatinAlphabet" cols="50" rows="10"></textarea>
+            <button v-on:click="convertToLatin">Convert</button>
+            <p class="result"><strong v-if="latin.length"> Your text:</strong> {{ latin }}</p>
+        </div>
+    </div>
+    
+    <script src="/assets/js/vue.js"></script>
+    <script src="/assets/js/socket.io.js"></script>
+    <script src="/main.js"></script>
+
+</body>
+</html>

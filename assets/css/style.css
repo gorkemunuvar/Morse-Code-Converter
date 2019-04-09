@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid purple;
+}
+
+.home {
+  padding-top: 50px;
+}
+
+.links {
+  margin-top: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  color: purple;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+h1 {
+  color: purple;
+}
+
+.main {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  outline: 0;
+}
+
+button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid purple;
+  background: purple;
+  color: white;
+  outline: 0;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.result {
+  white-space: pre-wrap;
+}
